@@ -1,0 +1,255 @@
+body
+{
+    margin: 0px;
+    padding: 0px;
+    /* background-image: linear-gradient(34deg, grey, white); */
+}
+
+
+    .nav
+    {
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #d83c3c;
+    box-shadow: 0 2px 0 rgb(0 0 0 / 40%);
+    z-index: 10;
+    }
+
+    .nav ul
+    {
+        list-style: none;
+    }
+
+    .nav li a
+    {
+        color: rgb(0, 0, 0);
+        text-decoration: none;
+        padding: 20px;
+        font-size: 15px;
+    }
+
+    .body1
+    {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: #000;
+    background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
+    }
+
+    h1{
+        color: white;
+        font-size: 37px;
+        text-align: center;
+    }
+
+    .first
+    {
+        color: #d83c3c;
+        font-size: 25px;
+    }
+    .second
+    {
+        color: #d83c3c;
+        font-size: 32px;
+        opacity: 0;
+    }
+    
+    .slideleft
+    {
+        animation: slideleft 1s linear forwards;
+    }
+    @keyframes slideleft
+    {
+        0%
+        {
+            transform: translate(100px);
+            opacity: 0;
+        }
+        100%
+        {
+            transform: translate(0px);
+            opacity: 1;
+        }
+    }
+
+    .second.slideleft
+    {
+        animation-delay: 1s;
+    }
+
+    .contact
+    {
+        height: 50px;
+        margin-top: 50px;
+        /* padding: 24px; */
+        width: 30%;
+        box-shadow: #d04141 3px 3px;
+        background: white;
+    }
+
+    a{
+        text-decoration: none;
+        color: black;
+        font-size: 18px;
+    }
+
+    .body2
+    {
+        text-align: center;
+        background: white;
+        width: 100%;
+    }
+
+    .about
+    {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row-reverse;
+        text-align: center;
+        min-width: 250px;
+        justify-content: center;
+
+    }
+
+    h2
+    {
+        font-size: 34px;
+    }
+
+    h2::after
+    {
+        content: '';
+        background: #ff523b;
+        width: 110px;
+        position: absolute;
+        height: 6px;
+        border-radius: 5px;
+        bottom: -75px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .Aboutme
+    {
+        font-size: 23px;
+        padding-left: 35px;
+        padding-right: 35px;
+    }
+
+    img
+    {
+        width: 320px;
+        height: 320px;
+    }
+
+    .body3
+    {
+        background-color: #000;
+        background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        height: 80vh;
+    }
+
+    h3{
+        color: White;
+        padding: 30px;
+        font-size: 34px;
+    }
+
+    .skills
+    {
+        width: 100%;
+        max-width: 600px;
+        padding: 0 20px;
+    }
+
+    .skill-name
+    {
+        font-size: 18px;
+        font-weight: 700;
+        color: white;
+        text-transform: uppercase;
+        margin: 20px 0;
+        text-align: initial;
+    }
+
+    .skill-bar
+    {
+        height: 14px;
+        background: #282828;
+        border-radius: 3px;
+        animation: fillbars 2.5s 1;
+    }
+
+    .skill-per
+    {
+        height: 14px;
+        background: #d13639;
+        border-radius: 3px;
+        position: relative;
+    }
+
+    .skill-per::before
+    {
+        content: attr(per);
+        position: absolute;
+        padding: 4px 6px;
+        background: #f1f1f1;
+        border-radius: 4px;
+        font-size: 12px;
+        top: -35px;
+        right: 0;
+        transform: translateX(50%);
+    }
+
+    .skill-per::after
+    {
+        content: "";
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        background: #f1f1f1;
+        top: -20px;
+        right: 0;
+        transform: translateX(50%)  rotate(45deg);
+        border-radius: 2px;
+    }
+
+    @keyframes fillbars
+    {
+        from{
+            width: 0%;
+        }
+        to{
+            width: 100%;
+        }
+    }
+
+    footer{
+        background: #111;
+        padding: 15px 23px;
+        color: #fff;
+        text-align: center;
+        height: 25px;
+        }
+        footer span a
+        {
+            color: crimson;
+            text-decoration: none;
+        }
+        #footer
+        {
+            width: 100%;
+        }
+
